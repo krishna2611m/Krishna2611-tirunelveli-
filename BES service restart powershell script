@@ -1,0 +1,11 @@
+$servers = Get-Content -Path "C:\Temp\Servers.txt"
+
+foreach ($server in $servers)
+  {
+
+
+Write-Host "Currently the script is restarting the serivce on" $server
+
+Invoke-Command -ComputerName $server -ScriptBlock {Restart-Service -name BESClient}
+
+}
