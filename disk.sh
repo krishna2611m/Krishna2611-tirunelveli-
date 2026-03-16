@@ -18,7 +18,7 @@ server_list="/linuxadmin/scripts/pre-check/mspchange1"
 output_file="/linuxadmin/scripts/pre-check/diskreport/agent_disk_usage_report_$(date +%F).csv"
 
 # Email recipient
-email_recipient="Krishna.murthy@manpowergroup.com,hariharan.t@manpowergroup.com"
+email_recipient="Krishna.murthy@xxx.com,xxx@.com"
 
 # Header for CSV
 echo "Server,Splunk Usage,Tanium Usage,SentinelOne Usage,Qualys Usage" > "$output_file"
